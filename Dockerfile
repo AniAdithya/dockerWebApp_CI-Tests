@@ -1,5 +1,5 @@
 # Use Maven with JDK 18 for both build and runtime
-FROM maven:3.8.7-openjdk-18
+FROM maven:3.8.7-openjdk-17
 # Set working directory
 WORKDIR /app
 # Copy source code
