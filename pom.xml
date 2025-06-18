@@ -58,17 +58,18 @@
 <groupId>org.springframework.boot</groupId>
 <artifactId>spring-boot-starter-test</artifactId>
 <scope>test</scope>
-<exclusions>
-<exclusion>
-<groupId>org.junit.vintage</groupId>
-<artifactId>junit-vintage-engine</artifactId>
-</exclusion>
-</exclusions>
 </dependency>
 <!-- JUnit Jupiter API (Optional, already included in spring-boot-starter-test) -->
 <dependency>
 <groupId>org.junit.jupiter</groupId>
 <artifactId>junit-jupiter-api</artifactId>
+<version>5.8.2</version>
+<scope>test</scope>
+</dependency>
+
+<dependency>
+<groupId>org.junit.jupiter</groupId>
+<artifactId>junit-jupiter-engine</artifactId>
 <version>5.8.2</version>
 <scope>test</scope>
 </dependency>
@@ -98,9 +99,6 @@
                <groupId>org.apache.maven.plugins</groupId>
                <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M9</version>
-                 <configuration>
-                   <forkCount>0</forkCount>
-                </configuration>
           </plugin>
         </plugins>
     </build>
