@@ -5,6 +5,7 @@ public class DocUnitTest{
  @Test
    public void testOnePlusOne() {
        assertEquals(2, 1 + 1);
+       assertEquals(3, 2 + 1);
    }
 
     @Test
