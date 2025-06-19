@@ -6,7 +6,7 @@ WORKDIR /app
 COPY . .
 # Build the app, but don't skip tests yet
 RUN mvn clean install -DskipTests=true
-#Tests run check>
+
 # Expose app port
 EXPOSE 8080
 # Start the Spring Boot app (runs in background)
